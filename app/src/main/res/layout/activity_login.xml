@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_login_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="center"
+        app:srcCompat="@drawable/img_background_shopping" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:elevation="12dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/halfCircleImageView"
+            app:srcCompat="@drawable/img_application_logo"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="#011E37"
+            android:layout_gravity="center"
+            android:text="ListMate"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_app_slogen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:text="Effortless Shopping Starts with Listmate."
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            />
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/editInput_login_email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="32dp"-->
+<!--            app:placeholderText="name@mail.com"-->
+<!--            android:hint="email">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/editInput_login_password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="32dp"-->
+<!--            app:endIconMode="password_toggle"-->
+<!--            android:hint="password">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="textPassword"-->
+<!--                />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--        <com.google.android.material.textview.MaterialTextView-->
+<!--            android:id="@+id/login_LBL_info"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginVertical="8dp"-->
+<!--            android:text="0000"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="#000000"/>-->
+
+<!--        <View-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"/>-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#011E37"
+            android:text="login"
+            android:textSize="18dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:backgroundTint="#011E37"
+            android:text="signup"
+            android:textSize="18dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "963285339477",
+    "project_id": "shopmate-dbc4d",
+    "storage_bucket": "shopmate-dbc4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963285339477:android:54ace7ca79dfd1bab473dc",
+        "android_client_info": {
+          "package_name": "com.example.listmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyComihAoiBvbjL0DlT89-DdA-drZRmXAn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

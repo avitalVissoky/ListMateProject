@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    >
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lst_view"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        app:cardBackgroundColor="#C5DFE2"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp"
+
+    style="?attr/materialCardViewElevatedStyle"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="list name"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:paddingHorizontal="10dp"
+            android:layout_height="10dp"
+            android:progress="25"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:progressTint="#011E37"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_last_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="last updated:"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <View
+        android:layout_below="@+id/lst_view"
+        android:layout_width="140dp"
+        android:layout_height="10dp"
+        android:background="@drawable/customshadow"/>
+
+</RelativeLayout>

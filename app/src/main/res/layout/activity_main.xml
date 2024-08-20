@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:background="#E0EBED">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="10dp"
+
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_user_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            android:elevation="5dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_anonymous"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="anonymous"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#011E37"
+            android:layout_gravity="right" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_above="@id/bottom_bar"
+    android:layout_below="@id/topBar">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My shopping list"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lists"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+<!--    <View-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="0dp"/>-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_ic_reminders"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_notification"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view_all_lists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:orientation="horizontal"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_intro_view"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="completed lists"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view_completed_lists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:orientation="horizontal"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_intro_view"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/img_ic_add_list"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_add"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_add_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New List"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/img_ic_add_list"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
