@@ -29,13 +29,18 @@ and intuitive shopping experience with reminders, tracking of items, and percent
 </ul>
 
 <h2>Screenshots</h2>
+<div >
+<img src="https://github.com/user-attachments/assets/7fe5467d-2c12-45fb-b857-35e647888e2a" style="height:400px;"/>
+<img src="https://github.com/user-attachments/assets/746ebade-1abf-4754-a8e0-21449421f838" style="height:400px;"/>
+<img src="https://github.com/user-attachments/assets/4cac4a49-6845-4403-8568-0fe32e7f6c40" style="height:400px;"/>
+<img src="https://github.com/user-attachments/assets/0ebf2b7f-c29e-4060-a145-84346127ad93" style="height:400px;"/>
+<img src="https://github.com/user-attachments/assets/2abbb76e-c7d1-4a6a-9458-2a1ebc66f389" style="height:400px;"/>
+<img src="https://github.com/user-attachments/assets/05c9dbb7-3edb-4c29-88d7-3903efc04205" style="height:400px;"/>
+<img src="https://github.com/user-attachments/assets/90d86246-40f1-415a-b0cf-ab419e6c87dd" style="height:400px;"/>
+</div >
 
-![mainView](https://github.com/user-attachments/assets/7fe5467d-2c12-45fb-b857-35e647888e2a)
-![listCreation](https://github.com/user-attachments/assets/746ebade-1abf-4754-a8e0-21449421f838)
-![listView](https://github.com/user-attachments/assets/4cac4a49-6845-4403-8568-0fe32e7f6c40)
-![addItem](https://github.com/user-attachments/assets/23126ebc-e197-4c66-af18-96372f25e93b)
-![listPartners](https://github.com/user-attachments/assets/2abbb76e-c7d1-4a6a-9458-2a1ebc66f389)
-![addPartners](https://github.com/user-attachments/assets/05c9dbb7-3edb-4c29-88d7-3903efc04205)
-![profile](https://github.com/user-attachments/assets/90d86246-40f1-415a-b0cf-ab419e6c87dd)
+
+
+
 
 
